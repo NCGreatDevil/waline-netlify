@@ -1,13 +1,8 @@
 [functions]
   directory = "netlify/functions/"
-
-  [[
-headers
-]]
+[[headers]]
   for = "/.netlify/functions/comment/*"
-  [
-headers.values
-]
+  [headers.values]
     Access-Control-Allow-Origin = "*"
     Access-Control-Allow-Methods = "GET, POST, PUT, DELETE, OPTIONS"
     Access-Control-Allow-Headers = "Content-Type, Authorization"
